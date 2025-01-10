@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro"
+
+---
+
+<Section
+  title="La visibilidad al alcance de un click"
+  subtitle="Inicie un chat con nosotros ahora mismo"
+  color="white"
+  id="home"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="https://api.whatsapp.com/send/?phone=59177285576&text&type=phone_number&app_absent=0&wame_ctl=1"
+    >
+      Habla con nosotros</a
+    >
+  </div>
+
+  <video
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    autoplay
+    muted
+    loop
+    src="../../public/video.webm"></video>
+</Section>
